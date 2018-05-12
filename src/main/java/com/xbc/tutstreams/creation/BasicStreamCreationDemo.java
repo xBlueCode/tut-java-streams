@@ -1,4 +1,4 @@
-package com.xbc.tutstreams.basic;
+package com.xbc.tutstreams.creation;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -28,11 +28,6 @@ public class BasicStreamCreationDemo {
     Stream<String> streamFromArguments = Stream.of("hello", "world", "stream", "api");
     System.out.println("Available elements: ");
     streamFromArguments.forEach(System.out::println);
-
-    System.out.println("\n--- Creating a Stream from the elements of an array ---");
-    Stream<String> streamFromArray = Stream.of(new String[] {"UK", "JP", "DZ"});
-    System.out.println("Available elements: ");
-    streamFromArray.forEach(System.out::println);
 
   }
 
